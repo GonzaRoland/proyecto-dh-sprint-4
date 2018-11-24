@@ -4,7 +4,7 @@
 
 <div class="sidenav">
     <div class="logocorpoFooter">
-        <a href="/"><img src="{{ asset('img/imagen_corporate/logospring.png') }}"</a>
+        <a href="/"><img src="{{ asset('img/imagen_corporate/logospring.png') }}" </a>
     </div> 
     <a href="/productos/categoria/5">ALIMENTOS</a>
     <a href="/productos/categoria/1">INDUMENTARIA</a>
@@ -21,7 +21,7 @@
         @foreach($products as $product)
         <div class="center">
                 <div class="card-product">
-                    <img class="card-img-product" src="{{ asset($product->photopath) }}" alt="Card image cap">
+                    <img class="card-img-product" src="/storage/{{ $product->photopath }}" alt="Card image cap">
                         <div class="card-body-product">
                             <h5 class="card-title-product">{{ $product->prod_name }}</h5>
                             <p class="card-price-product">${{ $product->price }}</p>

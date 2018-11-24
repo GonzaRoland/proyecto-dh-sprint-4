@@ -65,7 +65,7 @@ class ProductController extends Controller
             'price' => $request->input('price'),
             'prod_description' => $request->input('prod_description'),
             'stock' => $request->input('stock'),
-            'photopath' => $filePath,
+            'photopath' => $file,
             'genre_id' => $request->input('genre_id'),
         ]);
 
@@ -136,7 +136,7 @@ class ProductController extends Controller
             'price' => $request->input('price'),
             'prod_description' => $request->input('prod_description'),
             'stock' => $request->input('stock'),
-            'photopath' => $filePath,
+            'photopath' => $file,
             'genre_id' => $request->input('genre_id'),
         ]);
 

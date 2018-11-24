@@ -20,7 +20,7 @@
 				<!-- Product Image -->
 				<div class="col-lg-6">
 					<div class="product_image">
-						<div class="product_image_large"><img src="{{ asset($product->photopath) }}" alt=""></div>
+						<div class="product_image_large"><img src="/storage/{{ $product->photopath }}" alt=""></div>
 						<!-- <div class="product_image_thumbnails d-flex flex-row align-items-start justify-content-start">
 							<div class="product_image_thumbnail" style="background-image:url(img/product_image_1.jpg)" data-image="img/product_image_1.jpg"></div>
 							<div class="product_image_thumbnail" style="background-image:url(img/product_image_2.jpg)" data-image="img/product_image_2.jpg"></div>
