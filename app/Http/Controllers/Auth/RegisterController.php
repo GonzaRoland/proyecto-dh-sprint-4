@@ -73,6 +73,8 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
+        //dd(request());
+
         $request = request();
         
         if ($request->hasFile('image')) {
@@ -81,7 +83,37 @@ class RegisterController extends Controller
         $filePath = 'storage/app/public/fotos/' . $fileName;
         } else {$filePath = null;}
         
-        
+        $provincias = [
+            14 => 'Córdoba',
+            22 => 'Chaco',
+            26 => 'Chubut',
+            06 => 'Buenos Aires',
+            10 => 'Catamarca',
+            30 => 'Entre Rios',
+            34 => 'Formosa',
+            42 => 'La Pampa',
+            62 => 'Rio Negro',
+            70 => 'San Juan',
+            78 => 'Santa Cruz',
+            82 => 'Santa Fe',
+            94 => 'Tierra del Fuego, Antártida e Islas del Atlántico Sur',
+            38 => 'Jujuy',
+            54 => 'Misiones',
+            02 => 'Ciudad Autónoma de Buenos Aires',
+            18 => 'Corrientes',
+            46 => 'La Rioja',
+            66 => 'Salta',
+            86 => 'Santiago del Estero',
+            50 => 'Mendoza',
+            58 => 'Neuquén',
+            74 => 'San Luis',
+            90 => 'Tucumán'
+        ];
+
+        /* $provincia = $data['first_name'];
+        dd($provincia); */
+
+        //dd($data);
 
         return User::create(
             [

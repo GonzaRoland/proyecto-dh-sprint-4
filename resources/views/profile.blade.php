@@ -12,7 +12,7 @@
                     {{ method_field('PATCH') }}
                         @csrf
 
-                        @if($errors->any())
+                        {{-- @if($errors->any())
                         <div class="row collapse">
                             <ul class="alert-box warning radius">
                                 @foreach($errors->all() as $error)
@@ -20,19 +20,19 @@
                                 @endforeach
                             </ul>
                         </div>
-                        @endif
+                        @endif --}}
 
                         <div class="form-group row">
                             <label for="first_name" class="form-label col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
 
                             <div class="col-md-6">
-                                <input id="first_name" type="text" class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="first_name" value="{{ Auth::user()->first_name }}" required autofocus>
+                                <input id="first_name" type="text" class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="first_name" value="{{ Auth::user()->first_name }}" autofocus>
 
-                                @if ($errors->has('first_name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('first_name') }}</strong>
+                                {{-- @if ($errors->has('first_name')) --}}
+                                    <span id="invalid-first-name" class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('first_name') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -40,13 +40,13 @@
                             <label for="last_name" class="form-label col-md-4 col-form-label text-md-right">{{ __('Apellido') }}</label>
 
                             <div class="col-md-6">
-                                <input id="last_name" type="text" class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}" name="last_name" value="{{ Auth::user()->last_name }}" required autofocus>
+                                <input id="last_name" type="text" class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}" name="last_name" value="{{ Auth::user()->last_name }}" autofocus>
 
-                                @if ($errors->has('last_name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('last_name') }}</strong>
+                                {{-- @if ($errors->has('last_name')) --}}
+                                <span id="invalid-last-name" class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('last_name') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -54,13 +54,13 @@
                             <label for="email" class="form-label col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ Auth::user()->email }}" required>
+                                <input id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ Auth::user()->email }}">
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                {{-- @if ($errors->has('email')) --}}
+                                <span id="invalid-email" class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('email') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -71,11 +71,11 @@
                             <div class="col-md-6">
                                 <input id="phone" type="text" class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" name="phone" value="{{ Auth::user()->phone }}"  autofocus>
 
-                                @if ($errors->has('phone'))
+                                {{-- @if ($errors->has('phone'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('phone') }}</strong>
                                     </span>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
 
@@ -85,11 +85,11 @@
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
-                                @if ($errors->has('password'))
+                                {{-- @if ($errors->has('password'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
 
@@ -109,11 +109,11 @@
                             <div class="col-md-6">
                                 <input id="street_address" type="text" class="form-control{{ $errors->has('street_address') ? ' is-invalid' : '' }}" name="street_address" value="{{ Auth::user()->street_address }}" autofocus>
 
-                                @if ($errors->has('street_address'))
+                                {{-- @if ($errors->has('street_address'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('street_address') }}</strong>
                                     </span>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
 
@@ -123,11 +123,11 @@
                             <div class="col-md-6">
                                 <input id="apt_floor" type="text" class="form-control{{ $errors->has('apt_floor') ? ' is-invalid' : '' }}" name="apt_floor" value="{{ Auth::user()->apt_floor }}" autofocus>
 
-                                @if ($errors->has('apt_floor'))
+                                {{-- @if ($errors->has('apt_floor'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('apt_floor') }}</strong>
                                     </span>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
 
@@ -137,15 +137,15 @@
                             <div class="col-md-6">
                                 <input id="zip_code" type="text" class="form-control{{ $errors->has('zip_code') ? ' is-invalid' : '' }}" name="zip_code" value="{{ Auth::user()->zip_code }}" autofocus>
 
-                                @if ($errors->has('zip_code'))
+                                {{-- @if ($errors->has('zip_code'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('zip_code') }}</strong>
                                     </span>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        {{-- <div class="form-group row">
                             <label for="city" class="form-label col-md-4 col-form-label text-md-right">{{ __('Localidad') }}</label>
 
                             <div class="col-md-6">
@@ -171,7 +171,43 @@
                                     </span>
                                 @endif
                             </div>
-                        </div>
+                        </div> --}}
+
+                        <div class="form-group row">
+                                <label for="province" class="form-label col-md-4 col-form-label text-md-right">{{ __('Provincia') }}</label>
+    
+                                <div class="col-md-6">
+                                    <select class="form-control" id="province" name="province" value="{{ old('province') }}" autofocus>
+                                            <option>Seleccionar...</option>
+                                    </select>
+                                    {{-- <input id="city" type="text" class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city" value="{{ old('city') }}" autofocus>
+    
+                                    @if ($errors->has('city'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('city') }}</strong>
+                                        </span>
+                                    @endif --}}
+                                </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label for="city" class="form-label col-md-4 col-form-label text-md-right">{{ __('Municipio') }}</label>
+    
+                                <div class="col-md-6">
+    
+                                    <select class="form-control" id="city" name="city" value="{{ old('city') }}" autofocus>
+                                            <option>Seleccionar...</option>
+                                    </select>
+    
+                                    {{-- <input id="province" type="text" class="form-control{{ $errors->has('province') ? ' is-invalid' : '' }}" name="province" value="{{ old('province') }}" autofocus>
+    
+                                    @if ($errors->has('province'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('province') }}</strong>
+                                        </span>
+                                    @endif --}}
+                                </div>
+                            </div>
 
                         
 
@@ -181,11 +217,11 @@
                             <div class="col-md-6">
                                 <input id="foto" type="file" class="form-control{{ $errors->has('file') ? ' is-invalid' : '' }}" name="image" value="{{ old('file') }}" autofocus>
 
-                                @if ($errors->has('file'))
+                                {{-- @if ($errors->has('file'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('file') }}</strong>
                                     </span>
-                                @endif
+                                @endif --}}
                             </div>
                         </div>
 
@@ -205,8 +241,10 @@
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
     </div>
 </div>
+<script src="/js/profile-validate.js"></script>
 @endsection

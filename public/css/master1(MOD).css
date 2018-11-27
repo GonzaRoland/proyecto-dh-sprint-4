@@ -1,28 +1,27 @@
 * {
     box-sizing: border-box;
 }
-
 html {
     margin: 0;
     padding: 0;
     min-height: 100%;
     position: relative;
 }
-
 body {
     background-color: #f5f5f5;
     /*font-family: 'Lato', sans-serif;*/
     margin: 0;
-    padding-bottom: 340px;
+    padding-bottom: 290px;
 }
-
 header {
     background: rgba(0,0,0,0.9);
     width: 100%;
     position: fixed;
     z-index: 100;
   }
-
+main{
+    padding-bottom: 0px;
+}
 /* Socalo inferior--------------------------*/
 .socalo{
     text-align:center;
@@ -33,28 +32,25 @@ header {
     justify-content: center;
     display: grid;
     grid-column-gap:5rem;
-    grid-template-columns: repeat(1, 1230px); 
+    grid-template-columns: repeat(1, 1230px);
     font-family: 'Lato', sans-serif;
     color: #8b8b8b;
     font-size: 1.4rem;
-    line-height: 15px; 
-    padding-top: 50px; 
-
+    line-height: 15px;
+    padding-top: 50px;
 }
 .tituloLinea hr{
     height: 1px;
     background-color:rgb(230, 230, 230);
     margin-top: -5px;
     margin-bottom: 12px;
-      
 }
-
 /*imagen corporativa Logo-----------------------*/
 .logocorpo img{
     display:block;
     margin:auto;
     padding-top:20px;
-    width: 80px;    
+    width: 80px;
 }
 .logoTexto p{
     font-family: 'Chelsea Market';
@@ -70,16 +66,13 @@ header {
     color: rgb(130, 192, 166);
     margin-top: -22px;
 }
-
-
 /*Isotipos-----------------------------------*/
-.categoriasIconos{ 
+.categoriasIconos{
     justify-content: center;
     display: grid;
     grid-column-gap:7rem;
-    grid-template-columns: repeat(4, 90px);   
+    grid-template-columns: repeat(4, 90px);
 }
-
 .texto1{
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -100,20 +93,17 @@ header {
 }
 button{
     display:block;
-    margin:auto;   
+    margin:auto;
 }
 .btn{
     font-size: 80%;
-    height: 34px; 
+    height: 34px;
     border-color: rgb(196, 196, 196);
-    
 }
 .btn-outline-secondary:hover{
     background-color: rgb(155,155,155);
-    border-color: rgb(155,155,155);   
+    border-color: rgb(155,155,155);
 }
-/*--------------------------------------------------*/
-
 /*---------Titulos-----------------------*/
 .logoTextoMedio p{
     font-family: 'Chelsea Market';
@@ -122,69 +112,56 @@ button{
     color: rgb(130, 192, 166);
     margin-top: 50px;
     margin-bottom: 0px;
-    
 }
 .logoparrafoMedio p{
     font-family: 'Lato', sans-serif;
     font-size: 1.5em;
     text-align: center;
     color: rgb(155,155,155);
-    
-       
-} 
-/*---------------------------------------------*/
-
-
+}
 /*-----------Categorias Productos--------------*/
 .categoriasProductos{
     justify-content: center;
     display: grid;
-    grid-column-gap:1rem;
+    grid-column-gap:0.5rem;
     grid-row-gap: 1rem;
-    grid-template-columns: repeat(3,400px);
-    /*padding-bottom: 35px;*/  
+    grid-template-columns: repeat(6,200px);
+    /*padding-bottom: 35px;*/
 }
 .btn-dark{
     background-color: rgb(130, 192, 166);
     border-color: rgb(130, 192, 166);
     height: 34px;
-     
 }
 .btn-dark:hover {
         color:rgb(255, 255, 255);
         background-color: rgb(155,155,155);
-        border-color: rgb(196, 196, 196);        
+        border-color: rgb(196, 196, 196);
 }
 .card-body{
-    text-align: center;   
+    text-align: center;
 }
-
-/*----------------------------------------------*/
-
 /*-----------Productos Destacados--------------*/
 .productosDestacados{
     justify-content: center;
     display: grid;
     grid-column-gap:0.5rem;
-    grid-template-columns: repeat(6,200px);
+    grid-template-columns: repeat(8,148px);
     /*padding-bottom:30px;*/
-
 }
 .btn-secondary{
     background-color: rgb(130, 192, 166);
     border-color: rgb(130, 192, 166);
-    height: 34px;    
+    height: 34px;
 }
 .btn-secondary:hover {
         color:rgb(255, 255, 255);
         background-color: rgb(155,155,155);
-        border-color: rgb(155,155,155);        
+        border-color: rgb(155,155,155);
 }
 .productosDestacados h5{
     margin-bottom: 0px;
 }
-/*--------------------------------*/
-
 /*-----------Faqs--------------*/
 .faqs{
     justify-content: center;
@@ -209,29 +186,25 @@ button{
     padding-top:230px;
     padding-right:20px;
 }
-
 .card-faqs p{
     line-height: 1.8rem;
 }
-/*--------------------------------*/
 /*---------------Adoptar-----------------*/
 .adoptar{
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 .adoptar ul{
     justify-content: center;
     display: grid;
     grid-column-gap:0.5rem;
     grid-row-gap: 0.5rem;
-    grid-template-columns: repeat(6, 198px); 
+    grid-template-columns: repeat(6, 198px);
 }
 .adoptar ul li{
     background-color: rgb(130, 192, 166);
-    
 }
 .sobre:hover{
     background-color:rgb(155,155,155);
-    
 }
 .logoTextoMedioAdoptar p {
     font-family: 'Chelsea Market';
@@ -247,8 +220,9 @@ button{
     display: grid;
     grid-column-gap:0.5rem;
     grid-template-columns: 300px 600px 300px;
-    padding-bottom:30px;
-    background-color: #c5c5c5;   
+    padding-bottom:10px;
+    background-color: #c5c5c5;
+    margin-bottom: -4px;
 }
 .contacto form{
     background-color: none;
@@ -258,12 +232,19 @@ button{
     max-width: 60rem;
     width: 100%;
     border: none;
-    padding-top: 50px;  
+    padding-top: 50px;
 }
 .form-grou {
-  padding-left: 430px; 
+  padding-left: 430px;
 }
 .card-contacto{
+    text-align: center;
+    color: rgb(104, 104, 104);
+    height: 420px;
+    font-size:1.1em;
+    padding-top: 90px;
+}
+.card-contacto1{
     text-align: center;
     color: rgb(104, 104, 104);
     height: 420px;
@@ -274,7 +255,6 @@ button{
     width: 600px;
     height: 400px
 }
-
 .textoContacto{
     font-family: 'Chelsea Market';
     font-size: 3rem;
@@ -286,37 +266,28 @@ button{
     font-family: 'Chelsea Market';
     font-size: 2.8rem;
     color: rgb(130, 192, 166);
-    
-    
 }
 .textoContacto3{
     font-family:'Chelsea Market';
     font-size: 1.5rem;
     color: rgb(130, 192, 166);
-    
 }
 .textoContacto4{
     font-family:'Chelsea Market';
     font-size: 1.5rem;
     color: rgb(104, 104, 104);
-    
 }
-
 /*-----------Formulario de Registro---------------*/
-
 /* CLASSES FORM REGISTRO*/
-
-
 .reg-form {
     border-radius: 5px;
     color: rgb(104, 104, 104);
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin-top: 20px; 
+    margin-top: 20px;
     padding: 0px;
     width: 100%;
-    
 }
 .form {
     /*background-color: rgb(255, 255, 255);*/
@@ -326,8 +297,6 @@ button{
     max-width: 60rem;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.125);
-    
-      
 }
 .alert {
     background-color:  rgb(155,155,155);
@@ -369,12 +338,10 @@ small{
     text-align: center;
     vertical-align: middle;
     width: 100px;
-    
 }
 .form-btn:hover, .form-btn:focus{
-
     background-color: rgb(155,155,155);
-    color: rgb(255, 255, 255);  
+    color: rgb(255, 255, 255);
 }
 .form-control:focus {
     color:#505050 ;
@@ -387,9 +354,7 @@ small{
     align-content: center;
     display: flex;
 }
-
 /*-----------Footer--------------*/
-
 .footer-bs {
     background-color: #3c3d41;
 	padding: 60px 40px 0px 40px;
@@ -402,39 +367,39 @@ small{
     bottom: 0;
     width: 100%;
 }
-.footer-bs .footer-brand, 
-.footer-bs .footer-nav, 
-.footer-bs .footer-social, 
-.footer-bs .footer-ns { 
-    padding:10px 25px; 
-}
-.footer-bs .footer-nav, 
-.footer-bs .footer-social, 
+.footer-bs .footer-brand,
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
 .footer-bs .footer-ns {
-     border-color: transparent; 
+    padding:10px 25px;
+}
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
+     border-color: transparent;
 }
 .footer-bs .footer-brand h2 {
-    margin:0px 0px 10px; 
+    margin:0px 0px 10px;
 }
 .footer-bs .footer-brand p {
     font-size:12px;
-    color:rgba(255,255,255,0.70); 
+    color:rgba(255,255,255,0.70);
 }
 .footer-bs .footer-nav ul.pages {
-    list-style:none; 
-    padding:0px; 
+    list-style:none;
+    padding:0px;
 }
 .footer-bs .footer-nav ul.pages li {
-    padding:5px 0px;   
+    padding:5px 0px;
 }
 .footer-bs .footer-nav ul.pages a {
     color:rgba(255,255,255,1.00);
     text-transform:uppercase;
-    font-family:'Lato', sans-serif;    
+    font-family:'Lato', sans-serif;
 }
 .footer-bs .footer-nav ul.pages a:hover {
     color:rgba(255,255,255,0.80);
-    text-decoration:none; 
+    text-decoration:none;
 }
 .footer-bs .footer-nav h4 {
 	font-size: 11px;
@@ -442,28 +407,23 @@ small{
 	letter-spacing: 3px;
 	margin-bottom:10px;
 }
-
 .footer-bs .footer-nav ul.list {
     list-style:none;
     padding:0px;
 }
 .footer-bs .footer-nav ul.list li {
     padding:5px 0px;
-    
 }
 .footer-bs .footer-nav ul.list a {
     color:rgba(255,255,255,0.80);
-    
 }
 .footer-bs .footer-nav ul.list a:hover {
-    color:rgba(255,255,255,0.60); 
+    color:rgba(255,255,255,0.60);
         text-decoration:none;
 }
-
 .footer-bs .footer-social ul {
     list-style:none;
     padding:0px;
-    
 }
 .footer-bs .footer-social h4 {
 	font-size: 15px;
@@ -483,7 +443,6 @@ small{
     color:rgba(255,255,255,0.80);
     text-decoration:none;
 }
-
 .footer-bs .footer-ns h4 {
 	font-size: 15px;
 	text-transform: uppercase;
@@ -496,7 +455,6 @@ small{
     color:rgba(255,255,255,0.70);
     font-family:'Lato', sans-serif;
 }
-
 .input-group-btn{
     margin-left: 8px;
 }
@@ -504,8 +462,8 @@ small{
 .logocorpoFooter img{
     display:block;
     margin:auto;
-    padding-top: 5%;
-    width: 20%;     
+    padding-top: 30px;
+    width: 20%;
 }
 .logoTextoFooter p{
     font-family: 'Chelsea Market';
@@ -520,19 +478,15 @@ small{
     text-align: center;
     color: rgb(130, 192, 166);
     margin-top: -20px;
-    
 }
-
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .footer-bs .footer-nav,
     .footer-bs .footer-social,
     .footer-bs .footer-ns{
             border-left:solid 1px rgba(255,255,255,0.10);
     }
-}
-
+}*/
 /*----------------------------------*/
-
 .caption{
     border-radius: 5px;
     color: #FFF;
@@ -546,15 +500,13 @@ small{
     background-color: rgba(255, 255, 255, 0.25);
     color: #323232;
 }
-
 .carousel {
     display: flex;
     padding-bottom: 10px;
     padding-top: 40px;
 }
-
 /*titulos carrousel-----------------------*/
-.carousel-title { 
+.carousel-title {
     color: rgb(255, 255, 255);
     font-family: 'Chelsea Market';
     font-size: 2.5em;
@@ -612,7 +564,7 @@ small{
     left: 0;
     display: inline-block;
     width: 100%;
-    height: 10px;   
+    height: 10px;
 }
 .conteiner-flex{
     align-items: center;
@@ -764,11 +716,11 @@ small{
 }
 
 #welcome {
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 .form-label {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.6rem;
 }
 
@@ -835,7 +787,7 @@ small{
       text-align: center;
       padding-top: 10px;
       height:170px;
-      
+
   }
 
   .card-img-product {
@@ -879,12 +831,11 @@ small{
         background-color: #FFF;
         padding: 1rem;
     }
-    
+
     /* Current Page */
-    
+
     /* .current_page
     {
-        
     } */
     .current_page ul li
     {
@@ -920,9 +871,9 @@ small{
     {
         color: #937c6f;
     }
-    
+
     /* Product Image */
-    
+
     .product_row
     {
         display: flex;
@@ -963,9 +914,9 @@ small{
     {
         margin-right: 0;
     }
-    
+
     /* Product Content */
-    
+
     .product_name
     {
         font-size: 30px;
@@ -1094,7 +1045,7 @@ small{
         height: 100%;
         width: 29px;
     }
-    .quantity_inc, 
+    .quantity_inc,
     .quantity_dec
     {
         display: -webkit-box;
@@ -1231,32 +1182,88 @@ small{
     {
         color: #232323;
     }
-    
 
-/*-------------------Media Hernan-----------------*/
-@media (max-width: 909.98px){
+/*REG VALIDATE JAVASCRIPT CLASSES GONZA*/
 
+.invalid-input {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+
+.invalid-input:hover {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+  }
+ 
+
+/*CART CLASSES GONZA*/
+
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+	}
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+	
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+	
+	table#cart thead { display: none; }
+	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	
+	
+	
+	table#cart tfoot td{display:block; }
+	table#cart tfoot td .btn{display:block;}    
+
+
+/*-------------------------------------------Media Hernan---------------------------------------------*/
+
+
+@media (max-width: 575.98px){/*max-width: 575.98px*/
+    body{
+        padding-bottom: 910px;
+    }
     /*imagen corporativa----------------------------------------------------*/
     .logocorpo img{
         padding-top:80px;
-        width: 60px;     
-}
+        width: 60px;
+    }
     /*categorias iconos-----------------------------------------------------*/
-    .categoriasIconos{ 
+    .categoriasIconos{
         grid-column-gap:3rem;
         grid-row-gap: 1rem;
-        grid-template-columns: repeat(2, 90px);   
+        grid-template-columns: repeat(2, 90px);
     }
     /* titulos y lineas------------------------------------------------------*/
     .tituloLinea{
         grid-column-gap:5rem;
-        grid-template-columns: repeat(1, 360px); 
+        grid-template-columns: repeat(1, 360px);
         font-size: 1rem;
-        line-height: 1px;  
+        line-height: 1px;
     }
     .tituloLinea hr{
-        height: 1.5px;
-      
+        height: 1px;
+
     }
     /*-----------Categorias Productos---------------------------------------*/
     .categoriasProductos{
@@ -1264,12 +1271,14 @@ small{
         grid-row-gap: 0.2rem;
         grid-template-columns: repeat(2,180px);
     }
-    /*-----------Productos Destacados----------------------------------------*/
+    /*-----------Productos Destacados----------------------------------qqqqqqqqqqqqqqqqqqqqqqqq------*/
     .productosDestacados{
         grid-column-gap:0.2rem;
-        grid-template-columns: repeat(2,180px);
-        margin-bottom:50px;
+        grid-template-columns: repeat(2,35%);
+        margin-bottom:-5px;
+
     }
+
     /*-----------Faqs---------------------------------------------------------*/
     .faqs{
         grid-column-gap:0.2rem;
@@ -1282,122 +1291,419 @@ small{
     }
     /*---------Adoptar--------------------------------------------------------*/
     .adoptar ul{
-        justify-content: center;
-        display: grid;
         grid-column-gap:0.1rem;
         grid-row-gap: 0.1rem;
-        grid-template-columns: repeat(6, 55px); 
+        grid-template-columns: repeat(6, 55px);
     }
     .logoTextoMedioAdoptar p {
         font-size: 1.7em;
     }
+    .adoptar {
+        padding-bottom: 30px;
+    }
+    /*-----------Contacto-------------------------------------------------------------------*/
+    .contacto{
+        grid-column-gap:0rem;
+        grid-template-columns: repeat(1, 300px);
+        padding-bottom: 130px;
+        margin-bottom: -150px;
+    }
+    .contacto form{
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+    .form-grou {
+        padding-left: 0px;
+    }
+    .card-contacto{
+        height: 100px;
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+    .card-contacto1{
+        height: 100px;
+        font-size: 1rem;
+        padding-top: 0px;
+        padding-bottom: 180px;
+    }
+    .textoContacto{
+        font-size: 1.5rem;
+        line-height: 10px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .textoContacto1{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .textoContacto3{
+        font-size: 1rem;
+    }
+    .textoContacto4{
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+    }
+
+    /*imagen corporativa Footer-----------------------*/
+    .logocorpoFooter img{
+        width: 30px;
+        padding-top: 0px;
+        margin-top: -50px;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*-----------Categorias Productos---------------------------------------*/
+    .categoriasProductos{
+        grid-column-gap:0.3rem;
+        grid-row-gap:0.3rem;
+        grid-template-columns: repeat(3,31%);
+    }
+    /*categorias iconos-----------------------------------------------------*/
+    .categoriasIconos{
+        grid-column-gap:4rem;
+        grid-row-gap:0.1rem;
+        grid-template-columns: repeat(4, 90px);
+    }
+    /*-----------Productos Destacados----------------------------------------*/
+    .productosDestacados{
+        grid-column-gap:0.3rem;
+        grid-row-gap: 0.3rem;
+        grid-template-columns: repeat(4,23%);
+    }
+    /* titulos y lineas------------------------------------------------------*/
+    .tituloLinea{
+        grid-template-columns: repeat(1, 550px);
+        font-size: 1.1rem;
+    }
+   /*-----------Faqs--------------*/
+    .faqs{
+        grid-column-gap:2.2rem;
+        grid-template-columns: repeat(2,250px);
+        margin-left:-20px;
+    }
+    .fecha img{
+        width: 270px;
+    }
+    .card-faqs{
+        padding-top:200px;
+        padding-right:10px;
+    }
+    /*---------Adoptar--------------------------------------------------------*/
+    .adoptar ul{
+        grid-column-gap:0.2rem;
+        grid-row-gap: 0.2rem;
+        grid-template-columns: repeat(6, 90px);
+    }
+    .logoTextoMedioAdoptar p {
+        font-size: 1.7em;
+    }
+    .adoptar {
+        padding-bottom: 30px;
+    }
+
     /*-----------Contacto-------------------------------------------------------------------*/
 
-.contacto{
-    justify-content: center;
-    display: grid;
-    grid-column-gap:0rem;
-    grid-template-columns: repeat(1, 300px);
+    .contacto{
+        grid-column-gap:0rem;
+        grid-template-columns: repeat(1, 450px);
+        padding-bottom: 720px;
+
+    }
+    .contacto form{
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+
+    .form-grou {
+        padding-left: 0px;
+    }
+    .card-contacto{
+        height: 100px;
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+    .card-contacto1{
+        height: 100px;
+        font-size: 1rem;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .reg-formx{
+        width: 400px;
+        height: 400px
+    }
+    .textoContacto{
+        font-size: 1.5rem;
+        line-height: 10px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .textoContacto1{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .textoContacto3{
+
+        font-size: 1.3rem;
+    }
+    .textoContacto4{
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+    }
+
+    /*imagen corporativa Footer-----------------------*/
+    .logocorpoFooter img{
+        width: 50px;
+        padding-top: 0px;
+        margin-top: -50px;
+
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {/*---------------------------------------------------------------*/
+
+    /*titulos carrousel-----------------------*/
+    .carousel-title {
+    font-size: 1.8em;
     padding-bottom: 30px;
-     
-}
-.contacto form{
-    padding-left: 30px;
-    padding-top: 0px;  
+    }
+/*categorias iconos-----------------------------------------------------*/
+    .categoriasIconos{
+        grid-column-gap:7rem;
+    }
+    /*-----------Categorias Productos---------------------------------------*/
+    .categoriasProductos{
+        grid-column-gap:0.5rem;
+        grid-row-gap:0.5rem;
+        grid-template-columns: repeat(3,31%);
+    }
+     /*-----------Productos Destacados----------------------------------------*/
+     .productosDestacados{
+        grid-column-gap:0.2rem;
+        grid-row-gap: 0.2rem;
+        grid-template-columns: repeat(4,23%);
+    }
+    /* titulos y lineas------------------------------------------------------*/
+    .tituloLinea{
+        grid-template-columns: repeat(1, 94%);
+    }
+    /*-----------Faqs--------------*/
+    .faqs{
+        grid-column-gap:3rem;
+        grid-template-columns: repeat(2,300px);
+        margin-left:-20px;
+    }
+    /*---------Adoptar--------------------------------------------------------*/
+    .adoptar ul{
+        grid-template-columns: repeat(6, 120px);
+    }
+    .logoTextoMedioAdoptar p {
+        font-size: 1.9em;
+    }
+    .adoptar {
+        padding-bottom: 30px;
+    }
+    /*-----------Contacto-------------------------------------------------------------------*/
+
+    .contacto{
+        grid-template-columns: repeat(1, 450px);
+        padding-bottom: 250px;
+    }
+    .contacto form{
+        padding-left: 30px;
+        padding-top: 0px;
+    }
+
+    .form-grou {
+        padding-left: 0px;
+    }
+    .card-contacto{
+        height: 100px;
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 130px;
+    }
+    .card-contacto1{
+        height: 100px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .textoContacto{
+        font-size: 1.5rem;
+        line-height: 10px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .textoContacto1{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .textoContacto3{
+         font-size: 1.3rem;
+    }
+    .textoContacto4{
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+    }
+    /*Footer-----------------*/
+    .input-group-btn{
+        margin-left: 0px;
+        margin-top: 5px;
+    }
 }
 
-.form-grou {
-  padding-left: 100px; 
-}
-.card-contacto{
-    height: 100px;
-    font-size: 1rem;
-    padding-top: 60px;
-    padding-bottom: 245px;
-}
-.reg-formx{
-    width: 400px;
-    height: 400px
-}
-.textoContacto{
-    font-size: 2rem;
-    line-height: 10px;
-    padding-top: 0px;
-}
-.textoContacto1{
-    font-size: 1.8rem;   
-}
-.textoContacto3{
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
-    font-size: 1.3rem;   
-}
-.textoContacto4{
-    font-size: 1.5rem;
-    
-}
-
-
+    /*categorias iconos-----------------------------------------------------*/
+    .categoriasIconos{
+        grid-column-gap:7rem;
+    }
+    /*-----------Categorias Productos--------------*/
+    .categoriasProductos{
+        grid-column-gap:0.5rem;
+        grid-row-gap:1.5rem;
+        grid-template-columns: repeat(6,15.8%);
+        /*padding-bottom: 35px;*/
+    }
+     /*-----------Productos Destacados----------------------------------------*/
+     .productosDestacados{
+        grid-column-gap:0.3rem;
+        grid-template-columns: repeat(8, 12%);
+    }
+    /* titulos y lineas------------------------------------------------------*/
+    .tituloLinea{
+        grid-template-columns: repeat(1, 98%);
+    }
+    /*-----------Faqs--------------*/
+    .faqs{
+        grid-column-gap:0.3rem;
+        grid-template-columns: repeat(4,240px);
+        padding-bottom:0px;
+    }
+    .fecha img{
+        width: 235px;
+    }
+    .card-faqs{
+        padding-top:230px;
+        padding-right:20px;
+        padding-top: 180px;
+    }
+    /*---------Adoptar--------------------------------------------------------*/
+    .adoptar ul{
+        grid-template-columns: repeat(6, 155px);
+    }
+    .logoTextoMedioAdoptar p {
+        font-size: 1.9em;
+    }
+    .adoptar {
+        padding-bottom: 30px;
+    }
+    /*-----------Contacto-------------------------------------------------------*/
+    .contacto{
+        grid-column-gap:0rem;
+        grid-template-columns: 190px 580px 190px;
+        padding-bottom:50px;
+    }
+    .contacto form{
+        padding-top: 50px;
+    }
+    .card-contacto{
+        height: 420px;
+        font-size:1.1em;
+        padding-top:100px;
+    }
+    .card-contacto1{
+        height: 400px;
+        font-size:1.1em;
+        padding-top: 60px;
+    }
+    .reg-formx{
+        width: 550px;
+        height: 400px
+    }
+    .textoContacto{
+        font-size: 1.5rem;
+        padding-top: 60px;
+    }
+    .textoContacto1{
+        font-size: 1.5rem;
+    }
+    .textoContacto3{
+       font-size: 1.3rem;
+    }
+    .textoContacto4{
+        font-size: 1.3rem;
+    }
+    /*Footer-----------------*/
+    .input-group-btn{
+        margin-left: 0px;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 767.98px){
-    
+/*--------------------------------*/
     .row, .container-fluid{
         display: block;
         justify-content: center;
         padding-top: 20px;
     }
-
     .col-md-4, .col-12{
         margin: 0%;
         padding: 0px;
     }
 }
-
 @media (max-width: 767.98px) {
     .navbar-expand-md > .container,
     .navbar-expand-md > .container-fluid {
-      padding-right: 0;
-      padding-left: 0;
+        padding-right: 0;
+        padding-left: 0;
     }
   }
-  
+
+
 @media (min-width: 768px) {
-.navbar-expand-md {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    /*-----------nav------------*/
+    .navbar-expand-md {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navbar-expand-md .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .navbar-expand-md > .container,
+    .navbar-expand-md > .container-fluid {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .navbar-expand-md .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: none;
+    }
 }
-.navbar-expand-md .navbar-nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-.navbar-expand-md .navbar-nav .dropdown-menu {
-    position: absolute;
-}
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-}
-.navbar-expand-md > .container,
-.navbar-expand-md > .container-fluid {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-}
-.navbar-expand-md .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-}
-.navbar-expand-md .navbar-toggler {
-    display: none;
-}
-
-}
-
 @media (max-width: 559.98px) {
-    
     .carousel {
         display: none;
     }

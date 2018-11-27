@@ -73,7 +73,7 @@ class ProductController extends Controller
 
         $product->save();
 
-        return view('welcome');
+        return view('dogo');
     }
 
     /**

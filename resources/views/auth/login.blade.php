@@ -68,4 +68,5 @@
         </div>
     </div>
 </div>
+<script src="/js/login-validate.js"></script>
 @endsection

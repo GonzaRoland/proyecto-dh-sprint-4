@@ -12,7 +12,7 @@
                         {{ method_field('PATCH') }}
                         @csrf
 
-                        @if($errors->any())
+                        {{-- @if($errors->any())
                         <div class="row collapse">
                             <ul class="alert-box warning radius">
                                 @foreach($errors->all() as $error)
@@ -20,19 +20,19 @@
                                 @endforeach
                             </ul>
                         </div>
-                        @endif
+                        @endif --}}
 
                         <div class="form-group row">
                             <label for="prod_name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre del Producto') }}</label>
 
                             <div class="col-md-6">
-                                <input id="prod_name" type="text" class="form-control{{ $errors->has('prod_name') ? ' is-invalid' : '' }}" name="prod_name" value="{{ $product->prod_name }}" required autofocus>
+                                <input id="prod_name" type="text" class="form-control{{ $errors->has('prod_name') ? ' is-invalid' : '' }}" name="prod_name" value="{{ $product->prod_name }}"  autofocus>
 
-                                @if ($errors->has('prod_name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('prod_name') }}</strong>
+                                {{-- @if ($errors->has('prod_name')) --}}
+                                    <span id="invalid-prod-name" class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('prod_name') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -40,13 +40,13 @@
                             <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Precio') }}</label>
 
                             <div class="col-md-6">
-                                <input id="price" type="text" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}" name="price" value="{{ $product->price }}" required autofocus>
+                                <input id="price" type="text" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}" name="price" value="{{ $product->price }}"  autofocus>
 
-                                @if ($errors->has('price'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('price') }}</strong>
+                                {{-- @if ($errors->has('price')) --}}
+                                    <span id="invalid-price" class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('price') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -54,13 +54,13 @@
                             <label for="prod_description" class="col-md-4 col-form-label text-md-right">{{ __('Descripción') }}</label>
 
                             <div class="col-md-6">
-                                <input id="prod_description" type="text" class="form-control{{ $errors->has('prod_description') ? ' is-invalid' : '' }}" name="prod_description" value="{{ $product->prod_description }}" required>
+                                <input id="prod_description" type="text" class="form-control{{ $errors->has('prod_description') ? ' is-invalid' : '' }}" name="prod_description" value="{{ $product->prod_description }}" >
 
-                                @if ($errors->has('prod_description'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('prod_description') }}</strong>
+                                {{-- @if ($errors->has('prod_description')) --}}
+                                    <span id="invalid-prod-description"class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('prod_description') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -70,11 +70,11 @@
                             <div class="col-md-6">
                                 <input id="stock" type="text" class="form-control{{ $errors->has('stock') ? ' is-invalid' : '' }}" name="stock" value="{{ $product->stock }}"  autofocus>
 
-                                @if ($errors->has('stock'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('stock') }}</strong>
+                                {{-- @if ($errors->has('stock')) --}}
+                                    <span id="invalid-stock"class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('stock') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -112,11 +112,11 @@
                             <div class="col-md-6">
                                 <input id="image" type="file" class="form-control{{ $errors->has('file') ? ' is-invalid' : '' }}" name="image" value="{{ old('file') }}" autofocus>
 
-                                @if ($errors->has('file'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('file') }}</strong>
+                                {{-- @if ($errors->has('file')) --}}
+                                    <span id="invalid-image" class="invalid-input">
+                                        {{-- <strong>{{ $errors->first('file') }}</strong> --}}
                                     </span>
-                                @endif
+                                {{-- @endif --}}
                             </div>
                         </div>
 
@@ -127,7 +127,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Registrarse') }}
+                                    {{ __('Registrar') }}
                                 </button>
                             </div>
                         </div>
@@ -137,4 +137,5 @@
         </div>
     </div>
 </div>
+<script src="/js/regprod-validate.js"></script>
 @endsection

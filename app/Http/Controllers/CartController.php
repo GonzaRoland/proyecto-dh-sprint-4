@@ -91,4 +91,20 @@ class CartController extends Controller
     {
         //
     }
+
+    public function remove($id, Request $request)
+    {   
+        $products = collect($request->session()->get('cart.products'));
+        $products->filter(function($value, $key) use ($id) {
+            return $value['id'] == $id;
+        })->keys()->each(function($item) use ($request) {
+            $request->session()->forget("cart.products.$item");
+        });
+        
+        return redirect()->back();
+    }
+    public function removeAll(Request $request){
+        $request->session()->flush();
+        return redirect()->back();
+    }
 }
